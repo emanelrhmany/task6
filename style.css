@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 50vh;
+     background:
+        linear-gradient(
+            135deg,
+            rgba(10, 10, 63, 0.95),
+            rgba(71, 45, 124, 0.9)
+        );
+        text-align: center;
+        padding-top: 5%;
+        position: relative;
+        overflow: hidden;
+}
+
+/* Pseudo Element */
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 157px;
+    top: -11px;
+    left: -42px;
+    border-radius: 50%;
+    background: rgba(139, 124, 255, 0.25);
+    
+}
+
+
+/* Pseudo Element */
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 157px;
+    top: 2px;
+    right: 90px;
+    border-radius: 50%;
+    background: rgba(139, 124, 255, 0.25);
+box-shadow: -380px 290px 0 -25px rgba(139, 124, 255, 0.30);
+}
+
+
+
+
+header .badge{
+     display: inline-block;
+
+    font-size: 15px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+color: grey;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Pseudo Element */
+
+header .badge::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    right: 40%;
+    border: 3px solid rgba(207, 206, 211, 0.25);
+    border-radius: 50%;
+
+}
+
+
+
+
+header h1 {
+    margin: 15px 0;
+    color: white;
+    font-size: 35px;
+    direction: rtl;
+    position: relative;
+}
+
+/* Pseudo Element */
+
+header h1::after{
+    content: "";
+    width: 17%;
+    height: 3px;
+   background: linear-gradient(90deg,rgba(139, 124, 255, 0.25) 0%, rgba(87, 199, 186, 1) 50%, rgba(83, 237, 224, 1) 100%);
+    position: absolute;
+   left: 43%;
+   bottom: -5px;
+   
+}
+
+header h1 span {
+    color: #8b7cff;
+}
+
+
+
+
+header p {
+    font-size: 14px;
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+header button {
+    border: none;
+    font-size: 15px;
+    padding: 10px 25px;
+
+    background: #7055e8;
+
+    color: white;
+   font-weight: 700;
+    border-radius: 5px;
+
+    cursor: pointer;
+    position: relative;
+}
+
+/* Pseudo Element */
+
+header button::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: -50px;
+    left: -340%;
+    border: 3px solid rgba(207, 206, 211, 0.25);
+    border-radius: 50%;
+   background-color: #7055e895;
+}
+
+
+header button:hover{
+      background: #7055e87a;
+}
+
+
+.commant{
+    width: 30%;
+    margin: auto;
+    height: 400px;
+    margin-top: 30px;
+
+
+}
+
+
+.comments-card {
+    background: white;
+
+    padding: 20px;
+   
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
+
+
+     max-height: 400px;
+    overflow-y: auto;
+    padding-right: 25px;
+    scrollbar-width: thin;
+   scrollbar-color: #f0a000 transparent;
+}
+
+
+/* Comments Title */
+
+.comments-card h2 {
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Pseudo Element */
+
+.comments-card h2::before {
+    content: "#";
+
+    color: #f0a000;
+
+    margin-right: 5px;
+
+}
+
+/* =========================
+   COMMENT
+========================= */
+
+.comment {
+    background: #f7f7f7;
+
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    border-radius: 5px;
+}
+
+.comment h3 {
+   color: #f0a000;
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+.comment p {
+    font-size: 16px;
+    color: grey;
+    line-height: 1.5;
+}
+
+/* ========================================================== */
+/*                <!-- Quote Section -->     */
+.quote{
+ width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 300px;
+    background: white;
+
+    padding: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quote-card {
+    width: 100%;
+}
+
+.quote-card h2 {
+    font-size: 14px;
+
+    color: #888;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BLOCKQUOTE
+========================= */
+
+blockquote {
+    width: 60%;
+    position: relative;
+
+    padding: 15px 20px 15px 25px;
+
+    border-left: 5px solid #27c4dc;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* Pseudo Element */
+
+blockquote::before {
+    content: "";
+
+    position: absolute;
+    left: -15px;
+    top: -25px;
+
+    font-size: 50px;
+
+    color: #27c4dc;
+}
+
+
+/* =========================
+   CITE
+========================= */
+
+cite {
+    display: block;
+
+    margin-top: 10px;
+    color: #888;
+    font-size: 17px;
+ 
+    font-weight: bold;
+    font-style: italic;
+}
